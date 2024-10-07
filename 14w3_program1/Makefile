@@ -36,16 +36,17 @@ MODE ?= debug
 
 ifeq ($(MODE),debug)
     CCFLAGS += $(DEBUG_FLAGS)
-else ifeq ($(MODE),release)
+else 
     CCFLAGS += $(RELEASE_FLAGS)
 endif
 
 # build rules
 
-all:$(BUILD_DIR)/$(TARGET)
-	./$(BUILD_DIR)/$(TARGET)
+all:$(BUILD_DIR)/bin/$(TARGET)
+	./$(BUILD_DIR)/bin/$(TARGET)
+
 # linking
-$(BUILD_DIR)/$(TARGET):$(OBJECTS)
+$(BUILD_DIR)/bin/$(TARGET):$(OBJECTS)
 	mkdir -p $(dir $@)
 	$(LD) -o $@ $^ 
 
@@ -58,10 +59,10 @@ run:$(BUILD_DIR)/$(TARGET)
 	./$(BUILD_DIR)/$(TARGET)
 
 clean:
-	rm -rf $(BUILD_DIR) *.zip *.pdf
+	rm -rf $(BUILD_DIR) *.zip *.pdf docs
 
 dist: clean
-	zip -r dist.zip *
+	zip -r dist.zip * 
 
 push: clean
 	git push $(REMOTE) $(BRANCH)

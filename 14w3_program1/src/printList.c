@@ -1,20 +1,13 @@
 #include <stdio.h>
 #include "main.h"
-void print_list(Node *head)
+void print_list(list_t list)
 {
 
-	if (head == NULL)
-	{ // check if list is empty or not
-		printf("Linked list id empty, please create a linked list!");
-		return;
-	}
-
 	printf("Linked List : { ");
-	Node *tmp = head;
-	while (tmp != NULL)
+	while (list.head != list.tail->next)
 	{
-		printf("%d ", tmp->data);
-		tmp = tmp->next;
+		printf("%d ", list.head->data);
+		list.head = list.head->next;
 	}
 	printf(" }\n");
 }

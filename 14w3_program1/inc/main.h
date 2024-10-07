@@ -1,33 +1,36 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/**
- * @details structure of LinkedList Node
- */
 typedef struct Node
 {
     int data;
     struct Node *next;
-} Node;
+} node_t;
+
+typedef struct list
+{
+    node_t *head, *tail;
+    int size;
+} list_t;
 
 /**
  * @details add new node at the end of linkedlist
  */
-extern void add_atEnd(Node *tail);
+extern int insert_atEnd(list_t *list_ptr, int value);
 
 /**
  * @details add new node at the front of linkedlist
  */
-extern void add_atFront(Node *head);
+extern int insert_atFront(list_t *list_ptr, int value);
 
 /**
  * @details print all the node of linkedlist
  */
-extern void print_list(Node *head);
+extern void print_list(list_t list);
 
 /**
  * @details create new linked-list
  */
-extern Node *new_list();
+extern list_t newList();
 
 #endif
