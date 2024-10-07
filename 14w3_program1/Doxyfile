@@ -8,13 +8,13 @@ OUTPUT_DIRECTORY       = docs                # Directory where output will be ge
 CREATE_SUBDIRS         = YES
 
 # Input configurations
-INPUT                  = src/ inc/           # Directories to scan for source files
+INPUT                  = src/ inc/  README.md        # Directories to scan for source files
 RECURSIVE              = YES                  # Recursively scan directories
 FILE_PATTERNS          = *.c *.h              # File types to include
 
 # Output configurations
 GENERATE_HTML          = YES                  # Generate HTML documentation
-GENERATE_LATEX         = NO                   # Set to YES if you want to generate LaTeX documentation
+GENERATE_LATEX         = YES                   # Set to YES if you want to generate LaTeX documentation
 HTML_OUTPUT            = html                 # Directory for HTML output
 LATEX_OUTPUT           = latex                # Directory for LaTeX output
 GENERATE_TREEVIEW      = YES                  # Enable tree view in HTML
@@ -39,3 +39,4 @@ WARN_NO_PARAMDOC      = YES                  # Warn if parameter documentation i
 
 # Additional configurations (Optional)
 GENERATE_XML          = NO                   # Set to YES to generate XML output
+EXTENSION_MAPPING     = md=markdown

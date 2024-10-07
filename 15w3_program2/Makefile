@@ -1,12 +1,11 @@
 REMOTE=origin # git remote url
 BRANCH=master # git branch
 
-CDIR=. lib lib/**/* src src/**/*  # c  file directory
-INCDIR=inc inc/**/* # header file directory
+CDIR= src src/stack src/queue  # c  file directory
+INCDIR=inc # header file directory
 
-CC=gcc # comiler
+CC=gcc # coQueueQueue 
 LD=gcc # linker
-
 TARGET=main # the executable to build
 
 BIN_DIR=exe
@@ -65,5 +64,7 @@ dist: clean
 
 push: clean
 	git push $(REMOTE) $(BRANCH)
+
+
 
 -include $(DEPFILES)

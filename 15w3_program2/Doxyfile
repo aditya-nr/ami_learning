@@ -1,7 +1,7 @@
 # Doxyfile configuration for Doxygen
 
 # Project related configurations
-PROJECT_NAME           = "Week 3 Assignment 1"
+PROJECT_NAME           = "Week 3 Assignment 2"
 PROJECT_BRIEF          = 
 PROJECT_LOGO           =  # Optional: Path to a logo file
 OUTPUT_DIRECTORY       = docs                # Directory where output will be generated
