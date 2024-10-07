@@ -1,0 +1,104 @@
+\doxysection{inc/main.h File Reference}
+\hypertarget{main_8h}{}\label{main_8h}\index{inc/main.h@{inc/main.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdenominations}{denominations}}
+\begin{DoxyCompactList}\small\item\em Structure representing available denominations in the ATM. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcustomer}{customer}}
+\begin{DoxyCompactList}\small\item\em Structure representing a customer with their balance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structdenominations}{denominations}} \mbox{\hyperlink{main_8h_acf79a2162ddecfe92817419c22cd12cc}{denominations\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure representing available denominations in the ATM. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structcustomer}{customer}} \mbox{\hyperlink{main_8h_adbf6c0a93e57785ef3c8866e43726d93}{customer\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure representing a customer with their balance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8h_ae4fc7ac409e5bec258a5501fb2a51c46}{deposit}} (\mbox{\hyperlink{main_8h_acf79a2162ddecfe92817419c22cd12cc}{denominations\+\_\+t}} \texorpdfstring{$\ast$}{*}denom, \mbox{\hyperlink{main_8h_adbf6c0a93e57785ef3c8866e43726d93}{customer\+\_\+t}} \texorpdfstring{$\ast$}{*}cust)
+\begin{DoxyCompactList}\small\item\em Function to deposit money into the ATM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8h_a81a08a68443a26dbc422d6e484824799}{withdraw}} (\mbox{\hyperlink{main_8h_acf79a2162ddecfe92817419c22cd12cc}{denominations\+\_\+t}} \texorpdfstring{$\ast$}{*}denom, \mbox{\hyperlink{main_8h_adbf6c0a93e57785ef3c8866e43726d93}{customer\+\_\+t}} \texorpdfstring{$\ast$}{*}cust)
+\begin{DoxyCompactList}\small\item\em Function to withdraw money from the ATM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8h_a4811e9cd30f31d205a83232f9cd5dd7f}{balance\+\_\+enquiry}} (\mbox{\hyperlink{main_8h_acf79a2162ddecfe92817419c22cd12cc}{denominations\+\_\+t}} \texorpdfstring{$\ast$}{*}denom, \mbox{\hyperlink{main_8h_adbf6c0a93e57785ef3c8866e43726d93}{customer\+\_\+t}} \texorpdfstring{$\ast$}{*}cust)
+\begin{DoxyCompactList}\small\item\em Function to check balance and display available denominations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{main_8h_adbf6c0a93e57785ef3c8866e43726d93}\label{main_8h_adbf6c0a93e57785ef3c8866e43726d93} 
+\index{main.h@{main.h}!customer\_t@{customer\_t}}
+\index{customer\_t@{customer\_t}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{customer\_t}{customer\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structcustomer}{customer}} \mbox{\hyperlink{main_8h_adbf6c0a93e57785ef3c8866e43726d93}{customer\+\_\+t}}}
+
+
+
+Structure representing a customer with their balance. 
+
+\Hypertarget{main_8h_acf79a2162ddecfe92817419c22cd12cc}\label{main_8h_acf79a2162ddecfe92817419c22cd12cc} 
+\index{main.h@{main.h}!denominations\_t@{denominations\_t}}
+\index{denominations\_t@{denominations\_t}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{denominations\_t}{denominations\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structdenominations}{denominations}} \mbox{\hyperlink{main_8h_acf79a2162ddecfe92817419c22cd12cc}{denominations\+\_\+t}}}
+
+
+
+Structure representing available denominations in the ATM. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8h_a4811e9cd30f31d205a83232f9cd5dd7f}\label{main_8h_a4811e9cd30f31d205a83232f9cd5dd7f} 
+\index{main.h@{main.h}!balance\_enquiry@{balance\_enquiry}}
+\index{balance\_enquiry@{balance\_enquiry}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{balance\_enquiry()}{balance\_enquiry()}}
+{\footnotesize\ttfamily void balance\+\_\+enquiry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8h_acf79a2162ddecfe92817419c22cd12cc}{denominations\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{denom,  }\item[{\mbox{\hyperlink{main_8h_adbf6c0a93e57785ef3c8866e43726d93}{customer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cust }\end{DoxyParamCaption})}
+
+
+
+Function to check balance and display available denominations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em denom} & Pointer to denominations structure \\
+\hline
+{\em cust} & Pointer to customer structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8h_ae4fc7ac409e5bec258a5501fb2a51c46}\label{main_8h_ae4fc7ac409e5bec258a5501fb2a51c46} 
+\index{main.h@{main.h}!deposit@{deposit}}
+\index{deposit@{deposit}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{deposit()}{deposit()}}
+{\footnotesize\ttfamily void deposit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8h_acf79a2162ddecfe92817419c22cd12cc}{denominations\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{denom,  }\item[{\mbox{\hyperlink{main_8h_adbf6c0a93e57785ef3c8866e43726d93}{customer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cust }\end{DoxyParamCaption})}
+
+
+
+Function to deposit money into the ATM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em denom} & Pointer to denominations structure \\
+\hline
+{\em cust} & Pointer to customer structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8h_a81a08a68443a26dbc422d6e484824799}\label{main_8h_a81a08a68443a26dbc422d6e484824799} 
+\index{main.h@{main.h}!withdraw@{withdraw}}
+\index{withdraw@{withdraw}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{withdraw()}{withdraw()}}
+{\footnotesize\ttfamily void withdraw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8h_acf79a2162ddecfe92817419c22cd12cc}{denominations\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{denom,  }\item[{\mbox{\hyperlink{main_8h_adbf6c0a93e57785ef3c8866e43726d93}{customer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cust }\end{DoxyParamCaption})}
+
+
+
+Function to withdraw money from the ATM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em denom} & Pointer to denominations structure \\
+\hline
+{\em cust} & Pointer to customer structure \\
+\hline
+\end{DoxyParams}

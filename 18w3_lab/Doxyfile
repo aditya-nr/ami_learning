@@ -1,0 +1,42 @@
+# Doxyfile configuration for Doxygen
+
+# Project related configurations
+PROJECT_NAME           = "Week 3 Assessment"
+PROJECT_BRIEF          = 
+PROJECT_LOGO           =  # Optional: Path to a logo file
+OUTPUT_DIRECTORY       = docs                # Directory where output will be generated
+CREATE_SUBDIRS         = YES
+
+# Input configurations
+INPUT                  = src/ inc/  README.md        # Directories to scan for source files
+RECURSIVE              = YES                  # Recursively scan directories
+FILE_PATTERNS          = *.c *.h              # File types to include
+
+# Output configurations
+GENERATE_HTML          = YES                  # Generate HTML documentation
+GENERATE_LATEX         = YES                   # Set to YES if you want to generate LaTeX documentation
+HTML_OUTPUT            = html                 # Directory for HTML output
+LATEX_OUTPUT           = latex                # Directory for LaTeX output
+GENERATE_TREEVIEW      = YES                  # Enable tree view in HTML
+
+# Configuring documentation features
+EXTRACT_ALL            = YES                  # Extract documentation from all files
+EXTRACT_PRIVATE        = YES                  # Extract private members
+EXTRACT_STATIC         = YES                  # Extract static members
+EXTRACT_LOCAL_CLASSES  = YES                  # Extract local classes
+
+# HTML configurations
+HTML_HEADER            =    # Optional: Path to custom HTML header
+HTML_FOOTER            =    # Optional: Path to custom HTML footer
+
+# Doxygen logo
+HTML_COLORSTYLE_HUE   = 220                  # Custom HTML color styles
+
+# Miscellaneous settings
+QUIET                 = NO                   # Set to YES to suppress messages
+WARN_IF_UNDOCUMENTED  = YES                  # Warn if undocumented items are found
+WARN_NO_PARAMDOC      = YES                  # Warn if parameter documentation is missing
+
+# Additional configurations (Optional)
+GENERATE_XML          = NO                   # Set to YES to generate XML output
+EXTENSION_MAPPING     = md=markdown
