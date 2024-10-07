@@ -1,6 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
+/**
+ * @brief Inserts a new node at the front of the linked list.
+ * 
+ * @details  function creates a new node with the given value and inserts it 
+ * at the front of the linked list, updating the head pointer accordingly.
+ * 
+ * @param list_ptr Pointer to the linked list structure where the node will be added.
+ * @param value The value to be stored in the new node.
+
+ */
 int insert_atFront(list_t *list_ptr, int value)
 {
 	// check if list is empty or not

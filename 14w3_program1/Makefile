@@ -9,8 +9,8 @@ LD=gcc # linker
 
 TARGET=main # the executable to build
 
-BUILD_DIR=build
-OBJS_DIR=$(BUILD_DIR)/objs
+BIN_DIR=exe
+OBJS_DIR=objs
 
 
 # c and header files
@@ -42,11 +42,10 @@ endif
 
 # build rules
 
-all:$(BUILD_DIR)/bin/$(TARGET)
-	./$(BUILD_DIR)/bin/$(TARGET)
+all:$(BIN_DIR)/$(TARGET)
 
 # linking
-$(BUILD_DIR)/bin/$(TARGET):$(OBJECTS)
+$(BIN_DIR)/$(TARGET):$(OBJECTS)
 	mkdir -p $(dir $@)
 	$(LD) -o $@ $^ 
 
@@ -55,11 +54,11 @@ $(OBJS_DIR)/%.o : %.c
 	mkdir -p $(dir $@)
 	$(CC) $(CCFLAGS) -c $< -o $@
 
-run:$(BUILD_DIR)/$(TARGET)
-	./$(BUILD_DIR)/$(TARGET)
+run:$(BIN_DIR)/$(TARGET)
+	./$(BIN_DIR)/$(TARGET)
 
 clean:
-	rm -rf $(BUILD_DIR) *.zip *.pdf docs
+	rm -rf $(OBJS_DIR) $(BIN_DIR) *.zip *.pdf docs
 
 dist: clean
 	zip -r dist.zip * 

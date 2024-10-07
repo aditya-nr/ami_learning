@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * @brief Main function to manage a linked list through user input.
+ * 
+ * @details  program allows the user to create a new list, insert elements at 
+ * the front or end of the list, and print the entire list. The user is
+ * prompted to choose these options from a menu.
+ * 
+ * @return 0 upon successful execution.
 
+ */
 int main()
 {
     list_t list;
