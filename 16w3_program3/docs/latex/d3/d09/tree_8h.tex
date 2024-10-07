@@ -1,0 +1,156 @@
+\doxysection{inc/tree.h File Reference}
+\hypertarget{tree_8h}{}\label{tree_8h}\index{inc/tree.h@{inc/tree.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for tree.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtree}{tree}}
+\begin{DoxyCompactList}\small\item\em Structure representing a binary tree node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structtree}{tree}} \mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure representing a binary tree node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{tree_8h_a934f9b1d71ea383eedf5580d75eb961c}{create\+Tree\+Node}} (int value)
+\begin{DoxyCompactList}\small\item\em Creates a new tree node with the given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tree_8h_ad9fece74beb6a55aeab811a19f8df6cd}{insert}} (\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structtree}{tree}}, int value)
+\begin{DoxyCompactList}\small\item\em Inserts a new node with the given value into the binary tree. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tree_8h_aeb2b1a68e20a4b2fc65ef4e4fc635b64}{inorder\+\_\+traverse}} (\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structtree}{tree}})
+\begin{DoxyCompactList}\small\item\em Performs an in-\/order traversal of the tree and prints the node values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{tree_8h_ab36f69ef161c5f6a8c68e2c01c3ee152}{find\+Leftmost\+Node}} (\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structtree}{tree}})
+\begin{DoxyCompactList}\small\item\em Finds and returns the leftmost node (minimum value) in the tree. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tree_8h_ab7ffb3ee4ffb3a43f2e9d0239d9cfd41}{delete}} (\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structtree}{tree}}, int value)
+\begin{DoxyCompactList}\small\item\em Deletes a node with the specified value from the tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{tree_8h_a3bd3e16895ae76136a15df92f487429d}{search}} (\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structtree}{tree}}, int value)
+\begin{DoxyCompactList}\small\item\em Searches for a node with the specified value in the tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}\label{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7} 
+\index{tree.h@{tree.h}!tree\_t@{tree\_t}}
+\index{tree\_t@{tree\_t}!tree.h@{tree.h}}
+\doxysubsubsection{\texorpdfstring{tree\_t}{tree\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structtree}{tree}} \mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}}}
+
+
+
+Structure representing a binary tree node. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{tree_8h_a934f9b1d71ea383eedf5580d75eb961c}\label{tree_8h_a934f9b1d71ea383eedf5580d75eb961c} 
+\index{tree.h@{tree.h}!createTreeNode@{createTreeNode}}
+\index{createTreeNode@{createTreeNode}!tree.h@{tree.h}}
+\doxysubsubsection{\texorpdfstring{createTreeNode()}{createTreeNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} create\+Tree\+Node (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Creates a new tree node with the given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to be stored in the new node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tree\+\_\+t\texorpdfstring{$\ast$}{*} Pointer to the newly created node. 
+\end{DoxyReturn}
+\Hypertarget{tree_8h_ab7ffb3ee4ffb3a43f2e9d0239d9cfd41}\label{tree_8h_ab7ffb3ee4ffb3a43f2e9d0239d9cfd41} 
+\index{tree.h@{tree.h}!delete@{delete}}
+\index{delete@{delete}!tree.h@{tree.h}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily void delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tree,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Deletes a node with the specified value from the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & Pointer to the root of the tree. \\
+\hline
+{\em value} & The value of the node to be deleted. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tree_8h_ab36f69ef161c5f6a8c68e2c01c3ee152}\label{tree_8h_ab36f69ef161c5f6a8c68e2c01c3ee152} 
+\index{tree.h@{tree.h}!findLeftmostNode@{findLeftmostNode}}
+\index{findLeftmostNode@{findLeftmostNode}!tree.h@{tree.h}}
+\doxysubsubsection{\texorpdfstring{findLeftmostNode()}{findLeftmostNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} find\+Leftmost\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Finds and returns the leftmost node (minimum value) in the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & Pointer to the root of the tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tree\+\_\+t\texorpdfstring{$\ast$}{*} Pointer to the leftmost node in the tree. 
+\end{DoxyReturn}
+\Hypertarget{tree_8h_aeb2b1a68e20a4b2fc65ef4e4fc635b64}\label{tree_8h_aeb2b1a68e20a4b2fc65ef4e4fc635b64} 
+\index{tree.h@{tree.h}!inorder\_traverse@{inorder\_traverse}}
+\index{inorder\_traverse@{inorder\_traverse}!tree.h@{tree.h}}
+\doxysubsubsection{\texorpdfstring{inorder\_traverse()}{inorder\_traverse()}}
+{\footnotesize\ttfamily void inorder\+\_\+traverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Performs an in-\/order traversal of the tree and prints the node values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & Pointer to the root of the tree. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tree_8h_ad9fece74beb6a55aeab811a19f8df6cd}\label{tree_8h_ad9fece74beb6a55aeab811a19f8df6cd} 
+\index{tree.h@{tree.h}!insert@{insert}}
+\index{insert@{insert}!tree.h@{tree.h}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tree,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Inserts a new node with the given value into the binary tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & Pointer to the root of the tree. \\
+\hline
+{\em value} & The value to be inserted into the tree. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tree_8h_a3bd3e16895ae76136a15df92f487429d}\label{tree_8h_a3bd3e16895ae76136a15df92f487429d} 
+\index{tree.h@{tree.h}!search@{search}}
+\index{search@{search}!tree.h@{tree.h}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{tree,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Searches for a node with the specified value in the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & Pointer to the root of the tree. \\
+\hline
+{\em value} & The value to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tree\+\_\+t\texorpdfstring{$\ast$}{*} Pointer to the node if found, NULL if not found. 
+\end{DoxyReturn}

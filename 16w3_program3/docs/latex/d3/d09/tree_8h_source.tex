@@ -1,0 +1,28 @@
+\doxysection{tree.\+h}
+\hypertarget{tree_8h_source}{}\label{tree_8h_source}\index{inc/tree.h@{inc/tree.h}}
+\mbox{\hyperlink{tree_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TREE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TREE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<stdbool.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<stdint.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtree}{tree}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtree_ac5fb85480ddf2f373b099c2a2df0edab}{data}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtree}{tree}}\ *\mbox{\hyperlink{structtree_a719b6f34a3ac12d46c29f9b7d6308438}{left}},\ *\mbox{\hyperlink{structtree_aaab740c920c9c2c403df5a9245af5166}{right}};\ }
+\DoxyCodeLine{00016\ \}\ \mbox{\hyperlink{tree_8h_aabd08cfd7893b1b0d401ce689de8c1b7}{tree\_t}};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structtree}{tree\_t}}\ *\ \mbox{\hyperlink{tree_8h_a934f9b1d71ea383eedf5580d75eb961c}{createTreeNode}}(\textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00019\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tree_8h_ad9fece74beb6a55aeab811a19f8df6cd}{insert}}(\mbox{\hyperlink{structtree}{tree\_t}}\ **\mbox{\hyperlink{structtree}{tree}},\ \textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00020\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tree_8h_aeb2b1a68e20a4b2fc65ef4e4fc635b64}{inorder\_traverse}}(\mbox{\hyperlink{structtree}{tree\_t}}\ *\mbox{\hyperlink{structtree}{tree}});}
+\DoxyCodeLine{00021\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structtree}{tree\_t}}*\ \mbox{\hyperlink{tree_8h_ab36f69ef161c5f6a8c68e2c01c3ee152}{findLeftmostNode}}(\mbox{\hyperlink{structtree}{tree\_t}}\ *\mbox{\hyperlink{structtree}{tree}});}
+\DoxyCodeLine{00022\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \textcolor{keyword}{delete}(\mbox{\hyperlink{structtree}{tree\_t}}\ **\mbox{\hyperlink{structtree}{tree}},\ \textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00023\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structtree}{tree\_t}}*\ \mbox{\hyperlink{tree_8h_a3bd3e16895ae76136a15df92f487429d}{search}}(\mbox{\hyperlink{structtree}{tree\_t}}\ *\mbox{\hyperlink{structtree}{tree}},\ \textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
